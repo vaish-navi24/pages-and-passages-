@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="w-full flex items-center object-cover object-center justify-between" style="height: 10vh; background-color: white;">
+        <div class="bg-black rounded-md ml-1.5" style="height: 80% ;width: 9%; overflow: hidden;">
+            <a href="/adminpage"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="height: 90%; width: 15%;">
+            <a href="/drafts/<%= admin._id %>"><div><h1>Drafts</h1></div></a>
+            <a href="/adminpage/<%= admin._id %>"><button class="rounded-md" style="width: 100px; height: 40px; background-color: rgb(252, 205, 236);"> Go Back</button></a>
+        </div>
+    </div>
+
+    <div class="w-full flex items-center justify-center rounded-md pt-5 pb-10" style="height: auto; background-color: rgba(245, 174, 210, 0.481);">
+        
+        <div class="rounded-md pt-5" style="width: 90%; height: 84%; text-align: center;">
+            <b>Whats on your</b>&nbsp; <b style="color:rgb(237, 100, 168);"> Mind ?</b> <br><br>
+
+            <form action="/save/draft" method="post">
+                <input class="rounded-md" style="height: 37px;  border: 1px solid black;" type="text" name="title" placeholder="Title"> <br>
+                <input class="rounded-md mt-5" style="height: 37px;  border: 1px solid black;" type="url" name="cover" id="" placeholder="cover image url"> <br>
+                <textarea  class="mt-10 rounded-md" style="width: 80%; resize: vertical;border: 1px solid black;" name="filecontent" id="" placeholder="Content"></textarea> <br><br>
+                <input class="rounded-md" style="height: 37px;  border: 1px solid black;" class="mt-10" type="text" name="filename" id="" placeholder="Save file as"> <br><br>
+                <input class="rounded-md" style="width: 120px; height: 40px; background-color: rgba(237, 100, 168, 0.645);;" type="submit" name="" id="" value="Save as Draft">
+            </form>
+
+        </div>
+    </div>
+
+    <footer class="w-full flex items-center justify-evenly" style="height: 25vh; background-color: rgba(250, 227, 231, 0.411);;"> 
+        <div class="rounded-md ml-1.5" style="height: 60% ; width: 15%; overflow: hidden;">
+            <a href="/"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="width: 20%; height: 80%;">
+            Follow us on : 
+            <div>
+                <i class="fa-brands fa-instagram fa-bounce fa-2xl"></i>
+            </div>
+    
+            <div>
+                <i class="fa-brands fa-linkedin-in fa-bounce fa-2xl"></i>
+            </div>
+        </div>
+
+        <div>
+
+            &copy; 2024 Pages & Passages , Built with Nodejs and MongoDB
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

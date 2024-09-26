@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="w-full flex items-center object-cover object-center justify-between" style="height: 10vh; background-color: white;">
+        <div class="bg-black rounded-md ml-1.5" style="height: 80% ;width: 9%; overflow: hidden;">
+            <a href="/"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="height: 90%; width: 15%;">
+            <a href="/signin"><button class="rounded-md" style="width: 100px; height: 40px; background-color: rgb(239, 194, 200);"> Sign-in </button></a>
+            <div><h1><a href="https://www.instagram.com/vaishh_08/?utm_source=qr&r=nametag"><i class="ri-instagram-line"></i></a></h1></div>
+            <div><h1><a href="https://www.linkedin.com/in/vaishnavi-shambharkar-8b081028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="ri-linkedin-line"></i></a></h1></div>
+        </div>
+    </div>
+
+
+    <div class="flex items-center justify-center" style="height: 50vh; width: 100%; background-image: url(https://i.pinimg.com/originals/93/39/b5/9339b5201485c2e76ec2a30c5be4d3f8.png);"></div>
+
+    <div class="w-full flex items-center justify-center" style="height: 14vh; font-size: 24px; background-color: rgb(250, 227, 231);">
+        <h1>"Journeying Through Life's Beautiful Tapestry"</h1>
+    </div>    
+    
+    <div class="flex w-full justify-center" style="height: 70vh; flex-direction: column;">
+        <h1 style="font-size: 28px; margin-left: 5%;"><b> Latest </b> <b style="color: rgba(203, 100, 152, 0.764);"> Posts </b></h1>
+        <div class="mt-5 flex items-center justify-between" style="width: 90%; height: 50%; margin-left: 5%;">
+            <div style="width: 25%; height: 100%; background-color: antiquewhite;">
+                <a href="/view/<%= post1._id %>"><img class="w-full h-full" src="<%= post1.cover %>" alt=""></a>
+                <figcaption><%= post1.title %></figcaption>
+            </div>
+
+            <div style="width: 25%; height: 100%; background-color: antiquewhite;">
+                <a href="/view/<%= post2._id %>"><img class="w-full h-full" src="<%= post2.cover %>" alt=""></a>
+                <figcaption><%= post2.title %></figcaption>
+            </div>
+
+            <div style="width: 25%; height: 100%; background-color: antiquewhite;">
+                <a href="/view/<%= post3._id %>"><img class="w-full h-full" src="<%= post3.cover %>" alt=""></a>
+                <figcaption><%= post3.title %></figcaption>
+            </div>
+
+            <div class="flex justify-center" style="width: 15%; height: 90%; flex-direction: column;">
+                <i class="ri-arrow-right-line" style="font-size: 40px;"></i><a href="/view/posts" style="text-decoration: none;  color:  rgba(203, 100, 151, 0.932);">View all Posts</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 90%; height: 54vh; margin-left: 5%; margin-top: 3%;">
+        <h1 style="font-size: 28px;"><b> About </b> <b style="color: rgba(203, 100, 151, 0.932);"> ME </b></h1> <br>
+        <div class="w-full flex items-center justify-between" style="height:75%; background-color:rgb(250, 227, 231);">
+            <div class="flex items-center justify-center ml-10" style="width: 55%; height: 80%; flex-wrap: wrap;">
+                Hello, I’m Vaishnavi, a computer engineering student with a deep passion for writing, programming, and exploring the world of art in its many forms. I find joy in both the structured logic of coding and the creative expression found in literature, films, and visual arts. Whether I’m diving into a new programming challenge, crafting compelling stories, or analyzing the nuances of a film, I thrive on the intersection of technology and creativity. It’s this blend that fuels my curiosity and drives me to constantly learn and grow."
+            </div>
+            <div class="object-center object-cover" style="height: 100%; width: 30%;"><img class="h-full w-full" src="https://pbs.twimg.com/media/DX0xI7NVQAAr0uw.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <footer class="w-full flex items-center mt-5 justify-evenly" style="height: 25vh; background-color: rgba(250, 227, 231, 0.411);;"> 
+        <div class="rounded-md ml-1.5" style="height: 60% ; width: 15%; overflow: hidden;">
+            <a href="/"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="width: 20%; height: 80%;">
+            Follow us on : 
+            <div>
+                <a href="https://www.instagram.com/vaishh_08/?utm_source=qr&r=nametag"><i class="fa-brands fa-instagram fa-bounce fa-2xl"></i></a>
+            </div>
+    
+            <div>
+                <a href="https://www.linkedin.com/in/vaishnavi-shambharkar-8b081028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in fa-bounce fa-2xl"></i></a>
+            </div>
+        </div>
+
+        <div>
+
+            &copy; 2024 Pages & Passages , Built with Nodejs and MongoDB
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

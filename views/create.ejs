@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full flex items-center object-cover object-center justify-between" style="height: 10vh; background-color: white;">
+        <div class="bg-black rounded-md ml-1.5" style="height: 80% ;width: 9%; overflow: hidden;">
+            <a href="/"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="height: 90%; width: 15%;">
+            <div><h1><a href="https://www.instagram.com/vaishh_08/?utm_source=qr&r=nametag"><i class="ri-instagram-line"></i></a></h1></div>
+            <div><h1><a href="https://www.linkedin.com/in/vaishnavi-shambharkar-8b081028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="ri-linkedin-line"></i></a></h1></div>
+            <a href="/"><button class="rounded-md" style="width: 100px; height: 40px; background-color: rgb(241, 226, 228);"> Go Back </button></a>
+            
+        </div>
+    </div>
+
+    <div class="w-full flex items-center justify-center rounded-md" style="height: 90vh; background-color: rgba(245, 174, 210, 0.481);;">
+        <div class="rounded-md flex items-center" style="width: 50%; height: 70%; background-color: white;" >
+            <div style="text-align: center; width: 50%; border-right: 2px solid black;">
+                Account Already exits ? <br> <b style="color: rgba(203, 100, 152, 0.764);">Sign In</b> 
+                <form class="mt-10" action="/login" method="post">
+                    <input class="rounded-md p-2" style="border: 1px solid black; height: 35px;" type="text" name="username" id="" placeholder="Username"> <br><br>
+                    <input class="rounded-md p-2" style="border: 1px solid black; height: 35px;" type="password" name="password" id="" placeholder="Password"><br><br>
+                    <input class="rounded-md" style="height: 40px; width: 80px; background-color: rgb(251, 180, 192);" type="submit" value="Sign-in">
+                </form>
+            </div>
+            <div style="text-align: center; width: 50%;height: auto;">
+                Don't have an Account? <br> <b style="color: rgba(203, 100, 152, 0.764);">Sign Up</b>
+                <form class="mt-10" action="/signup" method="post">
+                    <input class="rounded-md p-2" style="border: 1px solid black; height: 35px;" type="text" name="username" id="" placeholder="Username"> <br><br>
+                    <input class="rounded-md p-2" style="border: 1px solid black; height: 35px;" type="password" name="password" id="" placeholder="Password"><br><br>
+                    <input class="rounded-md" style="height: 40px; width: 80px; background-color: rgb(251, 180, 192);" type="submit" value="Sign-up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full flex items-center justify-evenly" style="height: 25vh; background-color: rgba(250, 227, 231, 0.411);;"> 
+        <div class="rounded-md ml-1.5" style="height: 60% ; width: 15%; overflow: hidden;">
+            <a href="/"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="width: 20%; height: 80%;">
+            Follow us on : 
+            <div>
+                <a href="https://www.instagram.com/vaishh_08/?utm_source=qr&r=nametag"><i class="fa-brands fa-instagram fa-bounce fa-2xl"></i></a>
+            </div>
+    
+            <div>
+                <a href="https://www.linkedin.com/in/vaishnavi-shambharkar-8b081028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in fa-bounce fa-2xl"></i></a>
+            </div>
+        </div>
+
+        <div>
+
+            &copy; 2024 Pages & Passages , Built with Nodejs and MongoDB
+        </div>
+
+    </footer>
+</body>
+</html>

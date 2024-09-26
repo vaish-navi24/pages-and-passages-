@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="w-full flex items-center object-cover object-center justify-between" style="height: 10vh; background-color: white;">
+        <div class="bg-black rounded-md ml-1.5" style="height: 80% ;width: 9%; overflow: hidden;">
+            <a href="/adminpage/<%= admin._id %>"><img src="/images/pink.png" class="w-full h-full " alt=""></a>
+        </div>
+
+        <div class="flex items-center justify-evenly" style="height: 90%; width: 10%;">
+            <a href="/adminpage/<%= admin._id %>"><button class="rounded-md" style="width: 100px; height: 40px; background-color: rgb(252, 205, 236);"> Go Back</button></a>
+        </div>
+    </div>
+
+    <div class="p-10">
+        <b style="color:rgb(237, 100, 168); font-size: 20px;"><h1> Drafts</h1></b>
+        <% posts.forEach((val) => { %>
+            <% if(val.posted === false) { %>
+                <div class="rounded-md flex items-center p-10 justify-between mt-5" style=" width: 50vw; height: 100px; background-color: rgba(250, 218, 223, 0.915);">
+                    <a href="/post/<%= val._id  %>">
+                        <div>
+                            <%= val.title %>
+                        </div>
+                    </a>
+    
+                    <div style="width: 12%;" class="flex items-center justify-between">
+                        <a href="/upload/<%= val._id %>"><i class="fa-solid fa-upload fa-xl"></i></a>
+                        <a href="/delete/<%= val._id %>"><i class="fa-solid fa-trash fa-xl"></i></a>
+                    </div>
+                </div> 
+            <% } %>
+        <% }) %>
+    </div>
+
+</body>
+</html>
